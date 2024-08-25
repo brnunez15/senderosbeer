@@ -1,0 +1,404 @@
+/*aca edito la parte del celu*/
+
+body{
+    background-image: url("../imagenes/fondo3.jpg");
+}
+
+header{
+    display: flex;
+    background-color: rgba(24, 23, 23, 0.622);
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.titulo, .cerveza img{
+    display: none;
+}
+
+.btn-menu a{
+    display: flex;
+    background-color: rgb(176, 130, 45);
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    margin: 5px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+.btn-menu a:hover{
+    background-color: rgba(0, 0, 0, 0.286);
+    color: white;
+    cursor: pointer;
+}
+
+.imagenes img{
+    width: 256px;
+    height: 256px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+ul.navigation{
+    display: none;
+}
+
+ul.navigation.show{
+    display: block;
+}
+
+/*esto es para que los menus se centren, esten uno a bajo del otro, tengan una cierta separacion, */
+nav ul li a{
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    padding: 30px;
+    padding-right: 120px;;
+    font-family: Impact;
+    font-size: 15px;
+    color: black;
+}
+
+.navigation li:hover{
+    background-color: rgba(152, 104, 16, 0.769);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.538);
+   
+}
+
+nav ul{
+    margin-bottom: 20px;
+}
+
+.redes li a img{
+    width: 40px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.redes li{
+    list-style: none;
+}
+
+/*Parte de la bebidas*/
+
+.titulo-bebida, .titulo-comida, .titulo-nosotros, .titulo-calificanos, .titulo-2, .titulo-pedido{
+    color: rgb(152, 104, 16);
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 3px 3px black;    
+}
+
+table{
+    background-color: rgb(152, 104, 16);
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+table, th, td {
+    border:5px solid white;
+    border-collapse: collapse;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bolder;
+    height: 50px;
+}
+
+/*parte de acerca de nosotros*/
+
+section div p{
+    background-color: rgb(176, 130, 45);
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section.izquierda img{
+    width: 400px;
+
+}
+
+section.izquierda p{
+    width: 400px;
+}
+
+section.izquierda{
+    padding-top: 30px;
+    grid-area: izquierda;
+}
+
+section.derecha img{
+    width: 400px;
+}
+
+section.derecha{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-area: derecha;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    ".izquierda"
+    ".derecha";
+}
+
+.ubicacion{
+    margin-left: 170px;
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+/*parte del formulario*/
+
+.calificanos{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.formulario{
+    display: block;
+    background-color: rgb(176, 130, 45);
+    font-weight: bolder;
+}
+
+form p{
+    background-color: rgba(0, 0, 0, 0.455);
+    font-size: 20px;
+}
+
+.pie-calificanos p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*PARTE RULETA*/
+.ruleta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#btn-jugar, #azar, .mensajes{
+    background-color: rgba(219, 148, 27, 0.764);
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+    text-align: center;
+}
+
+.mensajes{
+    display: block;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    cursor: default;
+    font-size: 10px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#btn-jugar:hover{
+    background-color: rgba(219, 149, 27, 0.474);
+}
+
+#mensaje, #mensaje_perdio, #mensaje_gano, #puntaje, #sin_saldo {
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+#azar::placeholder, input[type="number"]{
+    color: black;
+    font-weight: bolder;
+}
+
+/*parte del formulario y tabla*/
+
+#agregar, #borrar{
+    background-color: rgb(220, 191, 118);
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    margin-left: 30px
+}
+
+#agregar:hover, #borrar:hover{
+    background-color: rgba(219, 149, 27, 0.474)
+}
+
+#comidas, #bebidas{
+    display: block;
+    background-color: rgba(219, 148, 27, 0.764);
+    font-weight: bolder;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+label{
+    display: flex;
+    background-color: rgba(24, 23, 23, 0.622);
+    border-radius: 15px;
+    margin-top: 50px;
+    color: rgb(152, 104, 16);
+    text-shadow: 3px 3px 3px black;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 455px;
+}
+
+/*aca edito la parte de la compu*/
+@media screen and (min-width: 650px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo{
+        display: flex;
+    }
+    
+    .titulo-bebida, .titulo-comida, .titulo-nosotros, .titulo-calificanos, .titulo-juego, .titulo-2, .titulo-pedido{
+        padding-left: 400px;
+    }
+
+    ul.navigation{
+        background-color: rgb(99, 68, 11);
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        margin-top: 100px;
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        padding-right: 50px;
+    }
+
+    .btn-menu{
+        display: none;
+    }
+
+    .cerveza img{
+        display: flex;
+        margin-top: 50px;
+        width: 100px;
+        padding-right: 60px;
+    }
+
+    header h1{
+        display: flex;
+        color: rgba(219, 148, 27, 0.764);
+        font-size: 50px;
+        text-shadow: 5px 5px 5px black;
+        margin-top: 90px;
+        padding-right: 50px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .redes li a img{
+        margin-left: 500px;
+        margin-top: 110px;
+    }
+
+    /*parte de acerca de nosotros*/
+
+    section.titulo p{
+        font-size: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "izquierda . derecha";
+    }
+    
+    section.izquierda{
+        padding-left: 30px;
+    }
+
+    .ubicacion{
+        margin-left: 450px;
+    }
+
+    /*parte del formulario*/
+
+    .pie-calificanos p{
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+    
+    /*PARTE RULETA*/
+
+    .ruleta{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 350px;
+        padding-right: 300px;
+    }
+
+    .mensajes{
+       margin-left: 500px;
+       padding: 10px 20px;
+    }
+
+    /*Parte de la Tabla*/
+
+    
+    .bloque-pedido{
+        display: flex;
+        justify-content: center;
+        margin-left: 200px;
+    }
+
+    #comidas, #bebidas{
+        font-size: 30px;
+    }
+
+    label{
+        font-size: 40px
+    }
+
+    #agregar, #borrar{
+        margin-left: 100px;
+    }
+
+}
